@@ -1,0 +1,21 @@
+﻿@model IEnumerable<OdeToFood.Data.Models.Restaurant>
+@{
+    ViewBag.Title = "Test";
+}
+
+<h2>Test</h2>
+<table>
+    <tr>
+        <th>ID:</th>
+        <th>NAME:</th>
+        <th>CUISINE:</th>
+    </tr>
+    @foreach (var r in Model) { 
+<tr>
+    <td>@r.Id</td>
+    <td>@r.Name</td>
+    <td>@r.Cuisine</td>
+</tr>
+    }
+</table>
+
